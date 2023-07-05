@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>pseudo class selector</title> 
+   </head>
+    <style>
+      ui > li:nth-child(3){
+        color:red ;
+      }
+ 
+      h1:hover{
+        color:goldenrod
+        
+      }
+      p::first-letter{
+        font-size: 35px;
+        color:red
+      }
+      p::selection{
+        background-color: brown;
+      }
+      p::after{
+        content:url()        
+            
+      }
+
+
+      [class="attribute"]{
+        background-color: blue;
+      }
+
+
+    </style>
+   <body>
+    
+    <!--first child-->
+
+     <ui>
+        <li>First child</li>
+        <li>Second child</li>
+        <li>Third child</li>
+        <li>Fourth child</li>
+        <li>Fifth child</li>
+
+     </ui>
+>
+     <!--a:hover-->
+     
+     <h1>This is my world</h1>
+
+     <p>All my friends have a cushy, high-paying job. Will I ever get a well-paying IT job</p>
+
+    <!--attribute selector-->
+
+    <h1 class="attribute">Attribute Selector</h1>
+   </body>
+
+
+
+
+</html>
